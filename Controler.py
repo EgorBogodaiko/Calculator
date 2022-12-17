@@ -18,7 +18,7 @@ def run():
     expression=pars.exp_to_list(exp_string,value_type)
 
     log.log_exp(exp_string)
-    result=calc.calculate(expression)
+    result=calc.calculate(expression,value_type)
     log.log_result(result)
     ui.print_result(exp_string,result)
 
