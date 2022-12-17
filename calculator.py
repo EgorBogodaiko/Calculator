@@ -1,4 +1,4 @@
-expr=['1.2','+','3','*','6','-','1']
+
 import string
 def calculate(expression,val_type):
     """Принимает на вход список из строк с числами и операторами,
@@ -33,5 +33,5 @@ def calculate(expression,val_type):
         print(result)
         if val_type==2: result = float((str(result)[1:].split('+'))[0])
     return result
-print(calculate(expr,2))
+
     
