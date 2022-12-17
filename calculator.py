@@ -16,7 +16,6 @@ def calculate(expression,val_type):
         if oper=='/':
             return digit1/digit2
     while len(expression)>1:
-        print(expression)
         mult_ind=0
         try: 
             mult_ind=expression.index('*')
@@ -25,13 +24,8 @@ def calculate(expression,val_type):
                 mult_ind=expression.index('/')
             except:
                 mult_ind=1
-        print(mult_ind)
         expression[mult_ind]=operate(complex(expression[mult_ind-1]),complex(expression[mult_ind+1]),expression[mult_ind])
-        print(expression[mult_ind])
         expression=expression[0:mult_ind-1]+expression[mult_ind:mult_ind+1:]+expression[mult_ind+2::]
         result= expression[0]
-        print(result)
         if val_type==2: result = float((str(result)[1:].split('+'))[0])
     return result
-
-    
