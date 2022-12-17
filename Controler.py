@@ -21,3 +21,4 @@ def run():
     result=calc.calculate(expression)
     log.log_result(result)
     ui.print_result(exp_string,result)
+
