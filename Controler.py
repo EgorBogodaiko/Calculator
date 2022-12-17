@@ -5,13 +5,13 @@ def run():
     log_type(valuetype)
     log_mode(mode_work)
     if mode_work==1:
-        exp=ui.input_digits
-        expression=exp_to_list(exp,value_type)
+        exp_string=ui.input_digits
+        expression=exp_to_list(exp_string,value_type)
     if mode_work==2:
-        exp=ui.expression
-        expression=exp_to_list(exp,value_type)
-
+        exp_string=ui.expression
+        expression=exp_to_list(exp_string,value_type)
+        
+    log_exp(exp_string)
     result=calculate(expression)
-    log_exp(expression)
     log_result(result)
-    print_result(exp,result)
+    print_result(exp_string,result)
