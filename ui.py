@@ -5,9 +5,8 @@ def input_value_type():
 	2 - вещественные"""
 
     value_type = 0
-
+    value_type=input('Введи тип чисел: \n1 - комплекс\n2 - веществ \n Выбор: ')
     return value_type
-
 
 def input_mode():
     """Ничего не принимает на входе
@@ -15,7 +14,7 @@ def input_mode():
 	1 - выражение
 	2 - посимвольный ввод"""
     mode = 0
-
+    mode = input('Введи как хочешь работать:\n 1 - выражением \n 2 - посимвольный ввод \n Твой выбор:  ')
     return mode
 
 
@@ -24,7 +23,9 @@ def input_digits():
     Запрашивает у пользователя числа и операцию посимвольно
     возвращает строку с выражением"""
     expression = ''
-
+    expression+= input('введи первое число: ')
+    expression+= input('оператор:  ')
+    expression+= input('введи второе число: ')
     return expression
 
 
@@ -32,9 +33,8 @@ def expression():
     """Ничего не принимает на входе
     Запрашивает у пользователя выражение в одну строку
     возвращает строку с выражением"""
-    exp=' '
-
-
+    exp=''
+    exp = input('Введи выражение: ')
     return exp
 
 def print_result(expression:str,result: str):
@@ -42,6 +42,7 @@ def print_result(expression:str,result: str):
     Красиво оформляет ответ
     Выводит офорлменный ответ в консоль
     Ничего не возвращает"""    
+    print('Вот результат вычислений: ',expression,'=',result)
 
 
 

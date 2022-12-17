@@ -1,6 +1,6 @@
 import Controler 
 
-file = open('./loggin.txt', 'a')
+file = open('./loggin.txt', 'a', encoding='UTF-8')
 
 def log_type(val_type:int):
     """Принимает на вход целое число, которое определяеят тип чисел в программе

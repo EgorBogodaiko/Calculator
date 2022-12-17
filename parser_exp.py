@@ -17,5 +17,3 @@ def exp_to_list(exp_str:str):
     exp_list.append(elem)
     return exp_list
 
-strtest=('5-3j+56+3j*34-6j')
-print(exp_to_list(strtest))

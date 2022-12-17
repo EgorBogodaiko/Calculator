@@ -27,5 +27,5 @@ def calculate(expression,val_type):
         expression[mult_ind]=operate(complex(expression[mult_ind-1]),complex(expression[mult_ind+1]),expression[mult_ind])
         expression=expression[0:mult_ind-1]+expression[mult_ind:mult_ind+1:]+expression[mult_ind+2::]
         result= expression[0]
-        if val_type==2: result = float((str(result)[1:].split('+'))[0])
+        if val_type=='2': result = float((str(result)[1:].split('+'))[0])
     return result
