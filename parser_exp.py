@@ -21,6 +21,5 @@ def exp_to_list(exp_str:str):
             exp_list.append(item)
             elem=''
     if elem !='': exp_list.append(elem)
-    print(exp_list,'VOT ONO')
     return exp_list
 

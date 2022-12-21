@@ -18,4 +18,4 @@ def run():
     log.log_exp(exp_string)
     result=calc.calculate(expression,value_type)
     log.log_result(result)
-    ui.print_result(exp_string,result)
+    ui.print_result(exp_string,result[0])
