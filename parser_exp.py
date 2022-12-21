@@ -8,12 +8,19 @@ def exp_to_list(exp_str:str):
     exp_list=[]
     elem=''
     for index,item in enumerate(exp_str):
-        if item not in ('+','-','*','/') :
+        if item in (')','('):
+            if elem != '':
+                exp_list.append(elem)
+                elem=''
+            exp_list.append(item)
+        elif item not in ('+','-','*','/') :
             elem+=item
         else:
-            exp_list.append(elem)
+            if elem != '':
+                exp_list.append(elem)
             exp_list.append(item)
             elem=''
-    exp_list.append(elem)
+    if elem !='': exp_list.append(elem)
+    print(exp_list,'VOT ONO')
     return exp_list
 
